@@ -13,7 +13,7 @@
       "questionTxt": "Longest river in the world?",
       "answerOpts": [
         { "answerTxt": "Mississippi", "isCorrect": false },
-        { "answerTxt": "Nilos", "isCorrect": false },
+        { "answerTxt": "Amazon", "isCorrect": false },
         { "answerTxt": "Nile", "isCorrect": true },
         { "answerTxt": "Lena", "isCorrect": false }
       ]
