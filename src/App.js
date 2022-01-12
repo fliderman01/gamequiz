@@ -9,31 +9,29 @@ export default function App() {
   const [pages, setPages] = useState(0);
 
   // import questins from data.json
-  const questions = data.variants;
-  // when finished change variants to questions here and in json
+  const questions = data.questions;
 
   // starts Quiz
   const startQuiz = () => {
     setPages(1);
   };
+
   // Play again
   const playAgain = () => {
     setPages(0);
-  };
-  // show results at the end of the questions
-  // currentQuestion > questions.length && setPages(2);
-  if (currentQuestion > questions.length) {
     setCurrentQuestion(0);
-    setPages(2);
-  }
+    setScore(0);
+  };
 
-  // answer option
+  // Next question
   const nextQuestion = (correct) => {
     correct && setScore(score + 1);
     setCurrentQuestion(currentQuestion + 1);
+    // show results when questions will end
+    currentQuestion == questions.length - 1 && setPages(2);
   };
 
-  // render start Quiz, Questions and Results
+  // render: start Quiz, Questions and Results
   const renderQuiz = () => {
     if (pages == 0) {
       return (
@@ -44,7 +42,7 @@ export default function App() {
           </button>
         </div>
       );
-    } else if (pages > 0) {
+    } else if (pages == 1) {
       return (
         <div className="questions bg">
           <div className="questionText">
@@ -65,7 +63,7 @@ export default function App() {
           </div>
         </div>
       );
-    } else if (pages > 1) {
+    } else if (pages == 2) {
       return (
         <div className="results bg">
           <h2>
