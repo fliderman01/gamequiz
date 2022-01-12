@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import DarkMode from './components/DarkMode';
 import data from './data.json';
 import './style.css';
 
@@ -77,10 +76,5 @@ export default function App() {
     }
   };
 
-  return (
-    <div>
-      <DarkMode />
-      {renderQuiz()}
-    </div>
-  );
+  return <div>{renderQuiz()}</div>;
 }
