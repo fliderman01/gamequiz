@@ -1,0 +1,31 @@
+{
+  "variants": [
+    {
+      "questionTxt": "Capital of Germany?",
+      "answerOpts": [
+        { "answerTxt": "Vena", "isCorrect": false },
+        { "answerTxt": "Berlin", "isCorrect": true },
+        { "answerTxt": "London", "isCorrect": false },
+        { "answerTxt": "Paris", "isCorrect": false }
+      ]
+    },
+    {
+      "questionTxt": "Who's Queen of England?",
+      "answerOpts": [
+        { "answerTxt": "Victoria II", "isCorrect": false },
+        { "answerTxt": "Madonna", "isCorrect": false },
+        { "answerTxt": "Elisabeth II", "isCorrect": true },
+        { "answerTxt": "Anastasia", "isCorrect": false }
+      ]
+    },
+    {
+      "questionTxt": "Who wrote \"Left hand of Darkness\"?",
+      "answerOpts": [
+        { "answerTxt": "Ursula K Le Guinn", "isCorrect": true },
+        { "answerTxt": "George R R Martin", "isCorrect": false },
+        { "answerTxt": "Brandon Sanderson", "isCorrect": false },
+        { "answerTxt": "Robert Jordan", "isCorrect": false }
+      ]
+    }
+  ]
+}

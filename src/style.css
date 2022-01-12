@@ -7,7 +7,10 @@ body {
   background-color: #709fdc;
   color: white;
 }
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   text-align: center;
 }
 button {
@@ -57,6 +60,7 @@ button:hover {
 /* answers buttons */
 .answers > button {
   max-width: 22em;
+  min-width: 14em;
   overflow-wrap: anywhere;
   margin: 0.5em;
 }
@@ -65,10 +69,11 @@ button:hover {
 
 @media screen and (min-width: 425px) {
   .bg {
-    margin: 4em 16em;
+    margin: 11em 16em;
   }
   .answers {
     display: initial;
+    /* margin: 0.5em 0 0 8em; */
     /* position: relative;
     left: 15%; */
   }
