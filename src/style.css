@@ -26,15 +26,42 @@ button:hover {
   background-color: orange;
   cursor: pointer;
 }
+/* SWICH BUTTON */
+.swich {
+  display: flex;
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+}
+
+.swich > p {
+  margin-right: 1em;
+}
+/* SWICH THEMES */
+.blue {
+  background-color: #01528a;
+}
+
+.blueBtn {
+  background-color: #709fdc;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.orangeBtn {
+  background-color: yellow;
+}
 /* START QUIZ */
-.StartBtn {
+#StartBtn {
   width: 11em;
   height: 2.5em;
 }
 /* QUESTIONS */
-/* background containers for questions an results containers */
+/* background containers for start, questions and results */
 .bg {
-  background-color: #01528a;
+  /* background-color: #01528a; */
   margin: 2em; /* check on mobile */
   padding: 2em;
   border-radius: 1em;
